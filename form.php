@@ -39,11 +39,13 @@
     <?php
         if (isset($_POST['submit'])) {
             $name = $_POST['name'];
+            $tel = $_POST['tel'];
             $email = $_POST['email'];
             $theme = ucfirst($_POST['theme']);
             ?>
         <div style="background-color: <?php echo $theme; ?>; opacity: 60%; color: white;">
             <h2>Name: <?php echo $name; ?></h2>
+             <h2>Telephone: <?php echo $tel; ?></h2>
             <h3>E-mail: <?php echo $email; ?></h3>
             <h3>Theme: <?php echo $theme; ?></h3>
         </div>
@@ -58,6 +60,10 @@
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Telephone:</label>
+                <input type="text" name="tel" required>
             </div>
             <div class="form-group">
                 <label for="email">E-mail:</label>
